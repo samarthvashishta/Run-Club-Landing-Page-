@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kinetic Club | Run for Community</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "secondary-fixed": "#cbceff",
+                "surface-container-low": "#eff1f2",
+                "on-primary": "#ffefeb",
+                "on-error": "#ffefee",
+                "surface": "#f5f6f7",
+                "primary-container": "#ff7851",
+                "surface-dim": "#d1d5d7",
+                "on-tertiary-fixed": "#360049",
+                "surface-container-highest": "#dadddf",
+                "surface-tint": "#ab2d00",
+                "on-surface": "#2c2f30",
+                "on-secondary-fixed-variant": "#3e47a0",
+                "on-surface-variant": "#595c5d",
+                "surface-container-high": "#e0e3e4",
+                "on-background": "#2c2f30",
+                "secondary-container": "#cbceff",
+                "surface-variant": "#dadddf",
+                "tertiary-fixed": "#e699fd",
+                "primary-fixed-dim": "#ff5d2b",
+                "surface-container": "#e6e8ea",
+                "tertiary": "#833e9a",
+                "error-dim": "#9f0519",
+                "on-tertiary-container": "#570e6f",
+                "outline": "#757778",
+                "on-tertiary-fixed-variant": "#611b79",
+                "surface-bright": "#f5f6f7",
+                "secondary": "#4953ac",
+                "on-primary-container": "#470e00",
+                "on-primary-fixed-variant": "#581300",
+                "background": "#f5f6f7",
+                "inverse-on-surface": "#9b9d9e",
+                "on-primary-fixed": "#000000",
+                "inverse-surface": "#0c0f10",
+                "on-error-container": "#570008",
+                "on-secondary": "#f3f1ff",
+                "primary-dim": "#962700",
+                "secondary-dim": "#3d469f",
+                "on-tertiary": "#ffedfe",
+                "tertiary-fixed-dim": "#d88cee",
+                "secondary-fixed-dim": "#babfff",
+                "primary": "#ab2d00",
+                "tertiary-dim": "#76318d",
+                "error": "#b31b25",
+                "error-container": "#fb5151",
+                "tertiary-container": "#e699fd",
+                "inverse-primary": "#ff5722",
+                "outline-variant": "#abadae",
+                "on-secondary-fixed": "#1f2882",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed": "#ff7851",
+                "on-secondary-container": "#343d96"
+              },
+              fontFamily: {
+                "headline": ["Lexend"],
+                "body": ["Plus Jakarta Sans"],
+                "label": ["Plus Jakarta Sans"]
+              },
+              borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #ab2d00 0%, #ff7851 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-zinc-950/70 backdrop-blur-xl shadow-sm dark:shadow-none no-border bg-zinc-100/50 dark:bg-zinc-800/50">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-orange-600 dark:text-orange-500" data-icon="speed">speed</span>
+<span class="text-2xl font-black text-zinc-900 dark:text-zinc-100 italic tracking-tighter font-['Lexend']">Kinetic Club</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-orange-600 dark:text-orange-400 font-bold border-b-2 border-orange-600 font-['Lexend'] tracking-tight" href="#">Home</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-zinc-100 font-['Lexend'] tracking-tight transition-all duration-300" href="#">Routes</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-zinc-100 font-['Lexend'] tracking-tight transition-all duration-300" href="#">Community</a>
+</div>
+<button class="bg-primary hover:bg-primary-fixed-dim text-on-primary px-6 py-2 rounded-full font-bold transition-all duration-300 transform active:scale-95">
+                Join Next Run
+            </button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[751px] flex items-center overflow-hidden px-6 lg:px-12 py-16">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<div class="inline-flex items-center gap-2 bg-tertiary-container px-4 py-1.5 rounded-full mb-6">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm" data-icon="bolt" data-weight="fill" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="text-on-tertiary-container font-bold text-xs uppercase tracking-widest">Active Community</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-black text-on-background leading-[0.9] tracking-tighter mb-6">
+                        Run for Community, <span class="text-primary italic">Not Just</span> the Finish Line
+                    </h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+                        Weekly runs for every pace, from first-timers to marathoners. Find your rhythm with a crew that keeps you moving.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="kinetic-gradient text-on-primary px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-primary/20 transition-all transform hover:-translate-y-1">
+                            Join Our Next Run
+                        </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-full font-bold text-lg hover:bg-surface-dim transition-all">
+                            View Schedule
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-2xl rotate-2">
+<img alt="Runners group" class="w-full h-full object-cover" data-alt="Group of diverse runners smiling while jogging together" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSvQ0G3UAME6aCIGmq-yrAO0YXoScLuFJtDcQdKSD627D7X4YumTXANvYEP0OeYduaVqmP2oF8NNoGcdndMUyAh9hrD3PJe2ZMTWjJ09sAOZa0KbjBxtqs7y5sSaoVJ4fbm1qaNRmB74OBAtZCXPqpshyeo55a3zmZnb5_qxJwnl5gJJajC5U0X83jSlxvwnr1JgM5GobT6p1maBKi6YEGyuAg9gEYjCUsKgtv-rQbOyhWhJZfipHCqWsP2YoLrwth9hjtcNt_EY9y"/>
+<div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur p-4 rounded-lg shadow-lg">
+<div class="flex items-center gap-3">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-white bg-primary"></div>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-secondary"></div>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-tertiary"></div>
+</div>
+<span class="text-xs font-bold text-on-surface">+240 Members active this week</span>
+</div>
+</div>
+</div>
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Value Proposition (Bento Style) -->
+<section class="py-24 px-6 lg:px-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Why Run With Us?</h2>
+<div class="w-24 h-2 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-6">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="groups">groups</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-3">Community First</h3>
+<p class="text-on-surface-variant leading-relaxed">More than just miles; we're a supportive family. From coffee post-run to cheering at local races.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-secondary text-on-secondary p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-6 md:scale-105 relative z-10">
+<div class="w-14 h-14 bg-white/20 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="speed">speed</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-3">All Paces Welcome</h3>
+<p class="text-on-secondary/80 leading-relaxed">From 5:00/km to walk-run intervals, no runner is left behind. Our "pacer pals" ensure everyone has company.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-6">
+<div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="map">map</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-3">Expert Routes</h3>
+<p class="text-on-surface-variant leading-relaxed">Discover the best city paths curated by veteran runners. Scenic, safe, and always surprising.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="py-24 px-6 lg:px-12 bg-surface">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Ready for Your First Run?</h2>
+</div>
+<div class="space-y-12">
+<div class="flex flex-col md:flex-row items-center gap-8 group">
+<div class="flex-shrink-0 w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary font-headline text-2xl font-bold shadow-lg">1</div>
+<div class="flex-grow bg-surface-container p-8 rounded-xl border-l-4 border-primary transform transition-transform group-hover:translate-x-2">
+<h4 class="text-xl font-bold mb-2">Sign up for free</h4>
+<p class="text-on-surface-variant">Join our digital hub to get the latest route updates and weather alerts.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8 group">
+<div class="flex-shrink-0 w-16 h-16 rounded-full bg-secondary flex items-center justify-center text-on-secondary font-headline text-2xl font-bold shadow-lg">2</div>
+<div class="flex-grow bg-surface-container p-8 rounded-xl border-l-4 border-secondary transform transition-transform group-hover:translate-x-2">
+<h4 class="text-xl font-bold mb-2">Pick a run that fits your schedule</h4>
+<p class="text-on-surface-variant">We host morning sprints, evening socials, and weekend long-distance treks.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8 group">
+<div class="flex-shrink-0 w-16 h-16 rounded-full bg-tertiary flex items-center justify-center text-on-tertiary font-headline text-2xl font-bold shadow-lg">3</div>
+<div class="flex-grow bg-surface-container p-8 rounded-xl border-l-4 border-tertiary transform transition-transform group-hover:translate-x-2">
+<h4 class="text-xl font-bold mb-2">Meet the crew and hit the pavement!</h4>
+<p class="text-on-surface-variant">Look for the orange flags at the trailhead. High-fives are mandatory!</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof -->
+<section class="py-24 px-6 lg:px-12 bg-on-background text-white overflow-hidden relative">
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm mb-4 block">Runner Stories</span>
+<blockquote class="text-3xl md:text-5xl font-headline font-bold leading-tight mb-8">
+                            "I was nervous about my pace, but the crew made me feel like an athlete <span class="text-primary italic">from day one</span>."
+                        </blockquote>
+<div class="flex items-center gap-4">
+<img alt="Sarah member" class="w-16 h-16 rounded-full object-cover border-2 border-primary" data-alt="Portrait of a female runner smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaLH8gA-ij3YG3fml8kV0MJ32xyL3fSxscjyAU2ZhK9ucseDsGCSJKX5bLzV0KwxmKpaoDb-s29f1Y0nKE4Mo2VGxk_PQwRY9KlOD_KGNtMpFuodMmgh0FPgfCVnMjGIRm4XM2AKyb97hktBPsKyfjnICBo9uR9r-m4l-dcJVLL6w5R88emlTIqKmoQYP_gXM1LelfOOO1SyvN868GQ1Z3KUSVtXrmMhl4OiFWnYEDqcS3ghpcZfm6hBc8AbBeTM2noa-KN4mmMKEh"/>
+<div>
+<p class="font-bold text-lg">Sarah Jenkins</p>
+<p class="text-white/60">Member since 2023 • 10k Specialist</p>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<div class="aspect-square bg-white/5 rounded-xl overflow-hidden">
+<img alt="Run 1" class="w-full h-full object-cover opacity-80" data-alt="Runner in the city" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ1w6B4XgRT8nhBbiOaoOvfS3WJX03NBc6rUN8wJ1tbPWNgcmB7zPUqOUSnKHv5jVhRu-zXTo-b7psWyvVan_tZp6fvnSbwAYsu56ixHxvfbPOTTCRut5huVQ5AWuay1JvWVyiTRDbXZho_UibKdB5RfACQy5c8887P9noH1TezudizfmrNX6wlR43-bGU6FBZI27k8RZseAgP4SoXxJN-kn7E3pMtocHG-W-bbuh-pePsaEKc2pzygTSO5ZyiCbL4-w0Iav4Aq0WG"/>
+</div>
+<div class="aspect-video bg-primary/20 rounded-xl overflow-hidden flex items-center justify-center p-4">
+<span class="text-6xl font-black text-white/10">5K</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="aspect-[3/4] bg-white/5 rounded-xl overflow-hidden">
+<img alt="Run 2" class="w-full h-full object-cover opacity-80" data-alt="Runners on a trail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhcG7NZfnMAw3VF-cY5ENHohSjcmKD3IO4oy1i8TTcehFmmIwGwRTo9V6CbiNkteXu5r9xmutoyKDG_rEIOrf2WqoQOWEoMmX35cWQTUpSZ-h8p2L_cPTNxNQsDdc0dxMVguu8rpiAu0v99VVZ6bblNZdl6-mF1w3Qv-6iu13TLeUwEu4U682Z0fxk83y-BRyRQRuf99t81MyI7xaPeFNuL0bcbf2QtwTm7pVw2RVmXtTq1hIbjt3BtGswg3GHYtVP5sa9gO0fN8L6"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 translate-x-1/2"></div>
+</section>
+<!-- FAQ -->
+<section class="py-24 px-6 lg:px-12 bg-surface">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold text-center mb-12">Got Questions?</h2>
+<div class="space-y-4">
+<details class="group bg-surface-container rounded-xl overflow-hidden transition-all">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold">
+<span>How much does it cost?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant leading-relaxed">
+                            Our weekly community runs are 100% free. We believe fitness should be accessible to everyone. We occasionally host ticketed workshops or charity events, but the primary runs are always open to all.
+                        </div>
+</details>
+<details class="group bg-surface-container rounded-xl overflow-hidden transition-all">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold">
+<span>What if I'm too slow?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant leading-relaxed">
+                            No such thing! We have dedicated "Tail Walkers" and pacer groups for every speed. We start together and we finish together.
+                        </div>
+</details>
+<details class="group bg-surface-container rounded-xl overflow-hidden transition-all">
+<summary class="flex justify-between items-center p-6 cursor-pointer list-none font-bold">
+<span>Do I need special gear?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant leading-relaxed">
+                            Just a pair of comfortable running shoes and clothes you can move in! We recommend moisture-wicking fabric for longer runs, but your favorite t-shirt works just fine for a start.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto kinetic-gradient rounded-xl p-12 text-center text-on-primary shadow-2xl relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline text-4xl md:text-6xl font-black mb-6 tracking-tight">Join Us Next Tuesday at 6 PM</h2>
+<p class="text-xl opacity-90 mb-10 max-w-2xl mx-auto">Meet at the Central Park West Entrance. All levels, all smiles. Let's hit the pavement together.</p>
+<button class="bg-white text-primary px-10 py-5 rounded-full font-black text-xl hover:scale-105 transition-transform shadow-lg">
+                        Confirm Attendance
+                    </button>
+</div>
+<!-- Abstract Texture -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-16 tonal-shift bg-zinc-100 dark:bg-zinc-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-6 font-['Plus_Jakarta_Sans'] text-sm tracking-wide">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-lg font-bold text-zinc-900 dark:text-zinc-100">Kinetic Club</span>
+<p class="text-zinc-500 dark:text-zinc-400">© 2024 Kinetic Editorial Run Club. Pulse of the Pavement.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200" href="#">Instagram</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200" href="#">Strava</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200" href="#">Contact</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+</body></html>
